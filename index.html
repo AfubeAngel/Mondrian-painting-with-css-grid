@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+
+      @media screen and (max-width: 1205px) {
+        padding: 50px 16px;
+      }
+    }
+
+    .grid-container {
+      background-color: #000;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 23px;
+      gap: 9px;
+      width: 748px;
+      height: 748px;
+
+      @media screen and (max-width: 1205px) {
+        grid-template-columns: 140px 75px 65px 25px;
+        grid-template-rows: 170px 60px 70px 13px;
+        gap: 9px;
+        width: 343px;
+        height: 348px;
+      }
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .blue {
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+    .box2 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+    }
+
+    .box3 {
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    .box4 {
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+
+    .box6 {
+      grid-row-start: 3;
+      grid-row-end: 5;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="item red box1"></div>
+    <div class="item white box2"></div>
+    <div class="item white box3"></div>
+    <div class="item white box4"></div>
+    <div class="item blue box5"></div>
+    <div class="item white box6"></div>
+    <div class="item white box7"></div>
+    <div class="item yellow box8"></div>
+    <div class="item black box8"></div>
+  </div>
+</body>
+
+</html>
